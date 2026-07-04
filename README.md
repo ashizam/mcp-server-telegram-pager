@@ -23,7 +23,7 @@ To use this, you need a Telegram API ID and Hash.
 2. **Generate your Session String:**
    Because Telegram requires 2FA (a login code sent to your app), you must generate an authentication session string locally first.
    ```bash
-   python -m mcp_server_telegram.generate_session
+   python -m mcp_server_telegram_pager.generate_session
    ```
    *Follow the prompts to enter your API ID, Hash, and Login Code. Copy the long session string it outputs!*
 
@@ -35,7 +35,7 @@ Add the following to your IDE's MCP configuration file (e.g., in Cursor or Claud
 {
   "mcpServers": {
     "telegram-pager": {
-      "command": "mcp-server-telegram",
+      "command": "mcp-server-telegram-pager",
       "env": {
         "TELEGRAM_API_ID": "YOUR_API_ID_HERE",
         "TELEGRAM_API_HASH": "YOUR_API_HASH_HERE",
