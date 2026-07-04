@@ -6,7 +6,7 @@ from telethon.sessions import StringSession
 
 # Initialize the MCP server
 # This creates a server that exposes ONLY the tools defined below.
-mcp = FastMCP("Send-Only Telegram")
+mcp = FastMCP("Telegram Pager")
 
 @mcp.tool()
 async def send_telegram_message(username: str, message: str) -> str:
