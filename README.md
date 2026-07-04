@@ -4,6 +4,10 @@ A specialized [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) s
 
 **Security First:** This server exposes exactly *one* tool (`send_telegram_message`). It is intentionally designed as a "Telegram Pager", meaning the AI cannot read your chat history, delete messages, or view your contacts.
 
+> [!WARNING]
+> **Do NOT use this tool for spam.**
+> If you configure an AI agent to send unsolicited messages, bulk broadcasts, or promotional content using this server, Telegram's automated systems will quickly flag your activity. **Your personal Telegram account will be permanently banned and your phone number blocked.** Use this exclusively for personal notifications or messaging your own contacts responsibly.
+
 ## Prerequisites
 
 To use this, you need a Telegram API ID and Hash.
