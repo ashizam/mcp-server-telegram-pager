@@ -12,7 +12,7 @@ mcp = FastMCP("Telegram Pager")
 async def send_telegram_message(username: str, message: str) -> str:
     """
     Send a direct message to a Telegram user.
-    Do not use the @ symbol in the username (e.g. use 'jakethesnake', not '@jakethesnake').
+    Do not use the @ symbol in the username (e.g., use 'coolperson123', not '@coolperson123').
     """
     api_id = os.environ.get("TELEGRAM_API_ID")
     api_hash = os.environ.get("TELEGRAM_API_HASH")
