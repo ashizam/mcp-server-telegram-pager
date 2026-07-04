@@ -17,6 +17,8 @@ To use this, you need a Telegram API ID and Hash.
    ```bash
    git clone https://github.com/ashizam/mcp-server-telegram-pager.git
    cd mcp-server-telegram-pager
+   python3 -m venv .venv
+   source .venv/bin/activate
    pip install -e .
    ```
 
