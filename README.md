@@ -13,11 +13,9 @@ To use this, you need a Telegram API ID and Hash.
 
 ## Installation & Setup
 
-1. **Clone the repository and install dependencies:**
+1. **Install the package:**
    ```bash
-   git clone https://github.com/ashizam/mcp-server-telegram-pager.git
-   cd mcp-server-telegram-pager
-   pipx install .
+   pipx install mcp-server-telegram-pager
    ```
 
 2. **Generate your Session String:**
