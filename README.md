@@ -17,15 +17,13 @@ To use this, you need a Telegram API ID and Hash.
    ```bash
    git clone https://github.com/ashizam/mcp-server-telegram-pager.git
    cd mcp-server-telegram-pager
-   python3 -m venv .venv
-   source .venv/bin/activate
-   pip install -e .
+   pipx install .
    ```
 
 2. **Generate your Session String:**
    Because Telegram requires 2FA (a login code sent to your app), you must generate an authentication session string locally first.
    ```bash
-   python -m mcp_server_telegram_pager.generate_session
+   mcp-server-telegram-pager-auth
    ```
    *Follow the prompts to enter your API ID, Hash, and Login Code. Copy the long session string it outputs!*
 

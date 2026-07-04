@@ -15,3 +15,4 @@ dependencies = [
 
 [project.scripts]
 mcp-server-telegram-pager = "mcp_server_telegram_pager.server:main"
+mcp-server-telegram-pager-auth = "mcp_server_telegram_pager.generate_session:main"
