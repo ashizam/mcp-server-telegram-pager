@@ -48,6 +48,6 @@ Add the following to your IDE's MCP configuration file (e.g., in Cursor or Claud
 
 ## How to Test
 Once configured, you can ask your AI assistant:
-> "Send a Telegram message to username 'jakethesnake' saying 'The build finished successfully!'"
+> "Send a Telegram message to username 'coolperson123' saying 'The build finished successfully!'"
 
 *(Note: Do not include the `@` symbol in the username).*
