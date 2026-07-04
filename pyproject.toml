@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-server-telegram"
+version = "0.1.0"
+description = "A send-only Telegram MCP server for personal AI notifications"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "telethon>=1.36.0"
+]
+
+[project.scripts]
+mcp-server-telegram = "mcp_server_telegram.server:main"
