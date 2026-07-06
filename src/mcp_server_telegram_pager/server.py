@@ -9,10 +9,11 @@ from telethon.sessions import StringSession
 mcp = FastMCP("Telegram Pager")
 
 @mcp.tool()
-async def send_telegram_message(username: str, message: str) -> str:
+async def send_telegram_message(to: str, message: str) -> str:
     """
     Send a direct message to a Telegram user.
-    Do not use the @ symbol in the username (e.g., use 'coolperson123', not '@coolperson123').
+    The 'to' argument can be a username (e.g. 'coolperson123') or a phone number with country code (e.g. '+1234567890').
+    Do not use the @ symbol for usernames.
     """
     api_id = os.environ.get("TELEGRAM_API_ID")
     api_hash = os.environ.get("TELEGRAM_API_HASH")
@@ -31,10 +32,10 @@ async def send_telegram_message(username: str, message: str) -> str:
             return "Error: Session is invalid or expired. Please generate a new session string."
 
         # Send the message (this is the ONLY capability the AI has access to)
-        await client.send_message(username, message)
+        await client.send_message(to, message)
         await client.disconnect()
         
-        return f"Successfully sent message to {username}."
+        return f"Successfully sent message to {to}."
 
     except Exception as e:
         return f"Failed to send message: {str(e)}"
